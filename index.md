@@ -1,5 +1,6 @@
 ---
 layout: home
+hovno: hovno
 ---
 
 {% for post in site.posts %}
