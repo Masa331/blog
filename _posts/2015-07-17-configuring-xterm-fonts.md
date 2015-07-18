@@ -4,7 +4,7 @@ title:  "Configuring XTerm fonts"
 date:   2015-07-17 21:22:49
 author: Přemysl Donát
 ---
-# Configuring linux XTerms font
+# Configuring XTerm font
 
 XTerm can be widely configured with with use of `~/.Xresources`
 
@@ -14,7 +14,7 @@ Font particularly can be set with line `xterm*font [options]`. For example mine 
 
 It configures different aspects of displayed font but it's hard to generate(and understand) manually.
 
-## Pick and configure font with xfontsel
+## Pick and configure with xfontsel
 
 Luckily there is a utility which really helps: `xfontsel`. Start xfontsel, pick how your font should look like and copy and paste it into `~/.Xresources`. The options string is automatically copied into your clipboard when you click on 'select' button.
 
