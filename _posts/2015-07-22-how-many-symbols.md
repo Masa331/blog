@@ -2,6 +2,7 @@
 layout: post
 title:  "How many symbols?"
 date:   2015-07-22 21:22:49
+comments: true
 author: Přemysl Donát
 ---
 # How many symbols can you do?

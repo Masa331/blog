@@ -2,6 +2,7 @@
 layout: post
 title:  "Keyboard shortcuts"
 date:   2015-07-21 21:22:49
+comments: true
 author: Přemysl Donát
 ---
 # Define keyboard shortcuts

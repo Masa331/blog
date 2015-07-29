@@ -2,6 +2,7 @@
 layout: post
 title:  "Configuring XTerm fonts"
 date:   2015-07-17 21:22:49
+comments: true
 author: Přemysl Donát
 ---
 # Configuring XTerm font

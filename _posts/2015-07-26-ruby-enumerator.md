@@ -2,6 +2,7 @@
 layout: post
 title:  "What is Enumerator?"
 date:   2015-07-26 21:22:49
+comments: true
 author: Přemysl Donát
 ---
 # What is Enumerator?
