@@ -6,6 +6,12 @@
 
   <section>
     {{ content }}
+
+    <div class="signature">
+      {{ ahoj }}
+      <span>Premysl Donat</span>
+      <span class='pull-right'>{{ page.date | date_to_long_string }}</span>
+    </div>
   </section>
 
   {% if page.comments %}
