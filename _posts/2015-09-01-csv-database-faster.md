@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "Make gem using csv database faster"
+title:  "Make your CSV database faster"
 date:   2015-09-01 21:22:49
 comments: true
 short: false
 author: Přemysl Donát
 ---
-# Gem using CSV database made faster
+# Make your CSV database faster
 
 ## Rationale
 
