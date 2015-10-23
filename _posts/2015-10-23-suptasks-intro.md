@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "SupTasks: intro"
+title:  "SupTasks: Intro"
 date:   2015-10-23 21:22:49
 comments: true
 short: false
@@ -34,6 +34,8 @@ There is a ton of these apps. But when it comes to web apps i'm often unhappy ho
 And another reason - it will serve as a place where i can test all technology things which interests me.
 
 I released the code under MIT license.
+
+I Might blog about it here :)
 
 It's here: <https://suptasks.com/>
 
