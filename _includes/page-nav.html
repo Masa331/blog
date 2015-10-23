@@ -4,7 +4,9 @@
         <li class='tag-h2'>
           <a href="{{ post.url | prepend: site.baseurl }}">
             {% if post.short %}
-              Note: {{ post.title }}
+              (N) {{ post.title }}
+            {% elsif post.suptasks %}
+              (ST) {{ post.title }}
             {% else %}
               {{ post.title }}
             {% endif %}
