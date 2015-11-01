@@ -19,7 +19,7 @@ Most of us will use `Cookie` and it might be like this:
 use Rack::Session::Cookie
 {% endhighlight %}
 
-What's actually stored in cookie is base64 encoded Marshaled hash:
+What's actually stored in cookie is base64 encoded marshalled hash:
 
 ![base64 marshalled hash]({{site.url}}/assets/images/cookie1.png)
 
@@ -66,8 +66,10 @@ Now the cookie looks like this:
 
 ![base64 marshalled hash with appended digest]({{site.url}}/assets/images/cookie4.png)
 
-Now the cookie has two parts - first is our base64 encoded marshalled hash and second is it's SHA1 digest created with our new secret. Everytime session is loaded back from cookie, rack takes the first part and creates new digest from it. Then it's compared to the one stored in second part of cookie. If they match it means that noone manipulated with the cookie. If someone did, our new digest would be different from the saved one.
+This new cookie has two parts - first is our base64 encoded marshalled hash and second is it's SHA1 digest created with our new secret. Everytime session is loaded back from cookie, rack takes the first part and creates new digest from it. Then it's compared to the one stored in second part of cookie. If they match it means that noone manipulated with the cookie. If someone did, our new digest would be different from the saved one.
 
-The most important thing now is to save the secret somewhere safe, so nobody can read it. Otherwise attacker could easily create digest which would match the rack check. You can keep your secret in server environment or load it from some yaml file for example but **never keep it in your version control**.
+The most important thing now is to **save the secret somewhere safe**, so nobody can read it. Otherwise attacker could easily create digest which would match the rack check. You can keep your secret in server environment or load it from some yaml file but **never keep it in your version control**.
 
-By the way in future versions of Rack it won't even be possible to use cookie session without secret.
+By the way in future versions of Rack it won't even be possible to use cookie session without secret. :)
+
+Have a good one
