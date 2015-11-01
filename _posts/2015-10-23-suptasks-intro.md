@@ -3,8 +3,6 @@ layout: post
 title:  "SupTasks: Intro"
 date:   2015-10-23 21:22:49
 comments: true
-short: false
-suptasks: true
 author: Přemysl Donát
 ---
 # Suptasks: Intro

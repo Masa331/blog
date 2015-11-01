@@ -3,7 +3,6 @@ layout: post
 title:  "Make your CSV database faster"
 date:   2015-09-01 21:22:49
 comments: true
-short: false
 author: Přemysl Donát
 ---
 # Make your CSV database faster
