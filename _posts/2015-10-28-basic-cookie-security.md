@@ -7,7 +7,7 @@ author: Přemysl Donát
 ---
 # Preconnect and reap the low hanging performance fruit
 
-Guys all credits to this post [Eliminating Roundtrips with Preconnect](https://www.igvita.com/2015/08/17/eliminating-roundtrips-with-preconnect/) but this preconnect thing is really cool!!
+All credits to this post [Eliminating Roundtrips with Preconnect](https://www.igvita.com/2015/08/17/eliminating-roundtrips-with-preconnect/) but this preconnect thing is really cool!!
 
 Ok, this is how a fresh request to my homepage looks in terms of performance:
 
