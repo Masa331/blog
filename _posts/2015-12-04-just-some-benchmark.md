@@ -7,11 +7,11 @@ author: Přemysl Donát
 ---
 # Just some string benchmark
 
-Been thinking how [#tr](http://ruby-doc.org/core-2.2.3/String.html#method-i-tr) [#delete](http://ruby-doc.org/core-2.2.3/String.html#method-i-delete) [#gsub](http://ruby-doc.org/core-2.2.3/String.html#method-i-gsub) methods are fast:
+Been thinking how [#delete](http://ruby-doc.org/core-2.2.3/String.html#method-i-delete) [#tr](http://ruby-doc.org/core-2.2.3/String.html#method-i-tr) [#gsub](http://ruby-doc.org/core-2.2.3/String.html#method-i-gsub) methods are fast:
 
 {% highlight ruby %}
+'some@email.com'.delete('@.')
 'some@email.com'.tr('@.', '')
-'some@email.com'.delete('@').delete('.')
 'some@email.com'.gsub('@', '').gsub('.', '')
 {% endhighlight %}
 
@@ -19,11 +19,11 @@ Been thinking how [#tr](http://ruby-doc.org/core-2.2.3/String.html#method-i-tr) 
 
 | method | real |
 |--------------|--------------------|
-| #tr | (0.009292) |
-| #delete | (0.014222) |
-| #gsub | (0.024745) |
+| #delete | (0.008266) |
+| #tr | (0.009554) |
+| #gsub | (0.026041) |
 
-The results will be different on other machine but it looks like `#tr` is fastest.
+The results will be different on other machine but it looks like `#delete` is fastest.
 
 ## Code used for benchmark
 
@@ -31,8 +31,8 @@ The results will be different on other machine but it looks like `#tr` is fastes
 require 'benchmark'
 
 Benchmark.bmbm do |x|
+   x.report { 10000.times { 'donat@gmail.com'.delete('@.') } }
    x.report { 10000.times { 'donat@gmail.com'.tr('@.', '') } }
-   x.report { 10000.times { 'donat@gmail.com'.delete('@').delete('.') } }
    x.report { 10000.times { 'donat@gmail.com'.gsub('@', '').gsub('.', '') } }
 end
 {% endhighlight %}
