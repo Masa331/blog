@@ -1,21 +1,12 @@
 ---
-layout: home
+layout: post
 hovno: hovno
 ---
 
+<h2>Blog Posts:</h2>
+
 {% for post in site.posts %}
 <div class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-        <h2 class="post-title">
-            {{ post.title }}
-        </h2>
-        {% if post.subtitle %}
-        <h3 class="post-subtitle">
-            {{ post.subtitle }}
-        </h3>
-        {% endif %}
-    </a>
-    <p class="post-meta">{{ post.author }}, {{ post.date | date: "%e.%-m.%Y" }}</p>
+  <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }} - {{ post.date | date: "%e.%-m.%Y" }}</a></h3>
 </div>
-<hr>
 {% endfor %}
