@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Minimal example of Roda-Sequel app connecting to different databases"
-date:   2015-12-04 21:22:49
+date:   2015-12-14 21:22:49
 comments: true
 author: Přemysl Donát
 ---
