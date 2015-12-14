@@ -59,4 +59,6 @@ Now in the same directory create sqlite3 database 'user_db' with 'users' table w
 
 If you then run the rack app you can switch between task databases by using 'db' url param.
 
+More info about Sequel's sharding abilities [here](http://sequel.jeremyevans.net/rdoc/files/doc/sharding_rdoc.html).
+
 Have a good one!
