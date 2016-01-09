@@ -1,6 +1,5 @@
 ---
 layout: post
-hovno: hovno
 ---
 
 <h2>Blog Posts:</h2>
