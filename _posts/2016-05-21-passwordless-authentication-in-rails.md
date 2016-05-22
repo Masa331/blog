@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Passwordle-less hassle-free authentication in Rails"
+title:  "Passwordl-less hassle-free authentication in Rails"
 date:   2016-05-21 21:22:49
 comments: true
 author: Přemysl Donát
 ---
-# Passwordle-less hassle-free authentication in Rails
+# Passwordl-less hassle-free authentication in Rails
 
 I think you know the situation pretty good. You want to try some app but then comes the registration. Big form, password requirements, email confirmation... Just why?!
 
