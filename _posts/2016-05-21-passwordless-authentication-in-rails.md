@@ -187,6 +187,13 @@ With this passwordless login you don't need to bother yourself and your users wi
 * Resetting and changing passwords logic
 * Using third party libs and gems
 
+### Update 24.5.2016
+
+Some cons were mentioned in discussion under the post. I consider these two the worst:
+
+* Long email delivery time
+* Users not used to such systems
+
 ## Links
 
 * [My repo with example app](https://github.com/Masa331/rails_passwordless_authentication)
